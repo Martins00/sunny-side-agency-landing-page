@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="docs/style.css">
   
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <title>Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -18,44 +18,101 @@
 
 <body>
   <main>
-    <header>
-      <nav>
-        <div>
+    <header class="
+      bg-mobile-header
+      sm: bg-desktop-header
+      bg-no-repeat
+      w-full
+      bg-center
+      bg-cover
+      min-h-screen
+      text-center">
 
+      <nav class="flex items-center justify-between py-6 px-10">
+        <div>
+          <img src="images/logo.svg" alt="Sunnyside logo">
         </div>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="
+          hidden
+          sm:flex
+          flex-1
+          justify-end
+          items-center
+          gap-14
+          text-white ">
+          <li><a href="#" class="font-paragraph">About</a></li>
+          <li><a href="#" class="font-paragraph">Services</a></li>
+          <li><a href="#" class="font-paragraph">Projects</a></li>
+          <li><a href="#" 
+            type="button"
+            class="
+            uppercase
+            bg-white
+            text-black
+            rounded-full
+            px-7
+            py-3
+            text-center
+            font-header
+            hover:bg-blue-300
+            hover:text-white
+            ">Contact</a></li>
         </ul>
+        <div class="flex sm:hidden flex-1 justify-end">
+          <img src="images/icon-hamburger.svg" alt="menu">
+        </div>
       </nav>
-      <h1>
-        We are creatives
-      </h1>
+      <div>
+        <h1 class="
+          text-white
+          font-header
+          uppercase
+          text-6xl
+          tracking-widest
+          md:mb-28
+          mb-32">
+            We are creatives
+        </h1>
+        <img src="images/icon-arrow-down.svg" alt="arrow" class="block text-center">
     </header>
 
     
+<!--Beginning of Feautures Grid-->
 
-    Transform your brand
+    <section>
+      <div>
+        <div class="">
+          Transform your brand
 
-    We are a full-service creative agency specializing in helping brands grow fast. 
-    Engage your clients through compelling visuals that do most of the marketing for you.
+      We are a full-service creative agency specializing in helping brands grow fast. 
+      Engage your clients through compelling visuals that do most of the marketing for you.
 
-    Learn more
+      Learn more
+        </div>
 
-    Stand out to the right audience
+        <div>
+          Stand out to the right audience
 
-    Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
 
-    Learn more
+      Learn more
+        </div>
 
-    Graphic design
-    Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+        <div>
+          Graphic design
+      Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
 
-    Photography
-    Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      Photography
+      Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </div>
+      </div>
+      
 
+      
+
+      
+    </section>
+<!-- End of features Grid-->
     Client testimonials
 
     We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
